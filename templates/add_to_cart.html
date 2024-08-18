@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product to Cart</title>
+</head>
+<body>
+    <h1>Add Product to Cart</h1>
+    <form action="{% url 'addProductToCart' %}" method="get">
+        <label for="code">Product Code:</label>
+        <input type="text" id="code" name="code" required>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        <button type="submit">Add to Cart</button>
+    </form>
+</body>
+</html>
